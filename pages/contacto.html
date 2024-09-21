@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../styles/index/base.css">
+    <link rel="stylesheet" href="../styles/index/body.css">
+    <link rel="stylesheet" href="../styles/contactanos/style.css">
+    <title>ICE (Integrated Conditioning Engineering)</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html">
+            <img src="../resources/misc/logo.svg" class="p-2 imagenLogo"  alt="Logo" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="../pages/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/servicios.html">Nuestros servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/eligenos.html">¿Por qué elegirnos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/clientes.html">Nuestros clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contáctanos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    
+<!--contenido-->
+<div class="bg-principal">
+
+    <div class="center-screen">
+        <div class="container container-custom">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <form action="../script/enviar_correo.php" method="post">
+                <div class="form-group">
+                    <label for="name" class="mb-2 mt-1">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Ingrese su nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="mb-2 mt-1">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact" class="mb-2 mt-1">Telefono</label>
+                    <input type="text" class="form-control" id="contact" name="contact" placeholder="Número de contacto" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="help" class="mb-2 mt-1">¿En que podemos ayudarte?</label>
+                    <textarea type="text" class="form-control h-100" id="help" name="help" placeholder="Escriba el asunto (maixmo 350 caracteres)" rows="4" maxlength="350" required></textarea>
+                </div>
+
+                
+                <div class="d-flex justify-content-center mt-1">
+                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=524791366206&text=Hola%21%20Quisiera%20recibir%20informaci%C3%B3n." class="float" target="_blank">
+        <i class="fab fa-whatsapp my-float"></i>
+    </a>
+
+
+    <!-- Footer -->
+    <footer class="text-black pt-5 pb-4 bg-dark" id="shadow_box">
+        <div class="container text-center text-md-start ">
+            <div class="row text-center text-md-start ">
+                
+                <!-- About Us -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">ICE (Integrated Conditioning Engineering)</h5>
+                    <p class="text-white">
+                        Somos una empresa mexicana con más de 10 años de experiencia en ingenierías electromecánicas.
+                    </p>
+                </div>
+
+
+                
+                <!-- Contact -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacto</h5>
+                    <p class="text-white"><i class="fas fa-home mr-3"></i> Jazmines 25 76147 Santiago, Querétaro Arteaga, Mexico</p>
+                    <p class="text-white"><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                    <p class="text-white"><i class="fas fa-phone mr-3"></i> +55 477 522 5749</p>
+                </div>
+                
+                <!-- Social Media -->
+                <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning text-center">Siguenos</h5>
+                    <div class="row justify-content-center">
+                        <!-- Columna para Facebook -->
+                        <div class="col-3 d-flex justify-content-center">
+                            <a href="https://www.facebook.com/people/ICEmantenimiento/61563604525239/?mibextid=LQQJ4d&rdid=UZXs0OpPLbtMvYbw&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FdW1iLEgLxdeyfw6F%2F%3Fmibextid%3DLQQJ4d" class="text-white text-center me-4">
+                                <i class="fab fa-facebook fa-2x"></i>
+                            </a>
+                        </div>
+                        <!-- Columna para WhatsApp -->
+                        <div class="col-2 d-flex justify-content-center">
+                            <a href="https://api.whatsapp.com/send?phone=524791366206&text=Hola%21%20Quisiera%20recibir%20informaci%C3%B3n." class="text-white text-center me-4" target="_blank">
+                                <i class="fab fa-whatsapp fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-md-12 mt-4 text-center">
+                    <p class="text-white-50">© 2024 Integrated Conditioning Engineering. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</div>
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

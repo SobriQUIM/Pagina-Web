@@ -1,0 +1,57 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.bg-principal{
+    background-image: linear-gradient(to top right, #ff5403, #14193f);
+}
+
+.imagenLogo {
+    width: 13vw; 
+    height: 8vh;
+    /* border: #ff5403 2px solid; */
+}
+
+
+
+#color_secundario {
+    color: #14193f;
+}
+
+#shadow_box {
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+#d{
+    text-align: center;
+    color: #ffffff;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+@media (max-width:480px)  { 
+    .imagenLogo{
+        width: auto;
+    }
+}
